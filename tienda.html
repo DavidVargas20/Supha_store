@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="css/style__tienda.css" >
+    <title>Carrito de Compras</title>
+   
+    </style>
+</head>
+<body class="tienda__body">
+
+    <header class="index__header">
+        <div class="header__buscar">
+           <a href="index.html"> <div class="buscar__img"></div></a>
+            <form action="#">
+                <input type="text" name="buscar" id="buscar" placeholder="Search...">
+            </form>
+        </div>
+        <div class="header__menu">
+            <ul class="menu">
+                <li> 
+                    <a href="tienda.html"><div class="img__tienda"></div>Store</a>
+                </li>
+                <li> 
+                    <a href="#">
+                        <div class="img__perfil"></div>
+                        
+                        User
+                        <ul class="lista__vertical">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="/login.html">Log in</a></li>
+                            <li><a href="/logup.html">Sign Up</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="tienda__body--capa">
+        <div class="tienda__main">
+            <div class="tienda__articulos">
+                    <!-- Producto 1 -->
+                <div class="articulo1 card__borde">
+                    <div class="articulo1__img card"></div>
+                    <div class="product" data-name="Juice" data-price="10.00">
+                        <span>Juice - $10.00</span>
+                        <button class="add-to-cart"><img src="img/index/carrito-de-compras.png" alt=""></button>
+                    </div>
+                </div>
+    
+                <!-- Producto 2 -->
+                <div class="articulo2 card__borde">
+                    <div class="articulo2__img card"></div>
+                    <div class="product" data-name="Burrito" data-price="20.00">
+                        <span>Burrito  - $20.00</span>
+                        <button class="add-to-cart"><img src="img/index/carrito-de-compras.png" alt=""></button>
+                    </div>
+                </div>
+        
+    
+                <!-- Producto 3 -->
+                <div class="articulo3 card__borde">
+                    <div class="articulo3__img card"></div>
+                    <div class="product" data-name="Coffee" data-price="30.00">
+                        <span>Coffee - $30.00</span>
+                        <button class="add-to-cart"><img src="img/index/carrito-de-compras.png" alt=""></button>
+                    </div>
+                </div>
+                
+    
+                <!-- Producto 4 -->
+                <div class="articulo4 card__borde">
+                    <div class="articulo4__img card"></div>
+                    <div class="product" data-name="Sandwich -" data-price="15.00">
+                        <span>Sandwich- $15.00</span>
+                        <button class="add-to-cart"><img src="img/index/carrito-de-compras.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tienda__cuenta">
+                <h2>Shopping Cart</h2>
+                <div id="cart">
+                    <p id="resultado">There are no products in the car</p>
+                    <p>Total: $<span id="cart-total">0.00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<script src="js/carrito.js"> </script>
+</html>

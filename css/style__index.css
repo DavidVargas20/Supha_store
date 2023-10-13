@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+.body__index{
+    background-color: #fff;
+    height: 100vh;
+}
+.index__header{
+    backdrop-filter: blur(20px);
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.index__header .header__buscar > a,form{
+    display: inline-block;
+}
+.header__buscar{
+    display: flex;
+    justify-content: center;
+}
+
+.buscar__img{
+    background-image: url("../img/index/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 30px;
+    width: 200px;
+    height: 50px;
+}
+#buscar{
+    font-size: 20px;
+    height: 50px;
+    width: 600px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+}
+#buscar:focus{
+    outline: none;
+}
+.header__menu{
+    justify-self: end;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    display: inline;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+.menu li:hover {
+    border-bottom: 1px solid black ;
+}
+.menu li a div{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.menu li a .img__tienda{
+    background-image: url("../img/index/tienda.png");
+    background-size: cover;
+}
+
+.menu li a .img__perfil{
+    background-image: url("../img/index/usuario.png");
+    background-size: cover;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: black;
+    border: none;
+
+}
+
+/*---------------------Menu_Desplegable-------------------------*/
+
+
+.lista__vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    background-color: white;
+}
+.menu li:hover .lista__vertical{
+    display: block;
+}
+.lista__vertical li:hover{
+    background-color: #cccccc;
+}
+.lista__vertical li a:hover{
+    color: black;
+    display: block;
+    padding: 20px;
+}
+
+
+
+/*---------------------Main-------------------------*/
+.main__img{
+    background-image: url("../img/index/platano.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.img__fondo--capa{
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.capa__contenedor{
+    height: 60%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.capa__contenedor .contenedor__info{
+   padding-top: 30%;
+}
+.capa__contenedor .contenedor__info h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.capa__contenedor .contenedor__info p{
+    margin-bottom: 30px;
+}
+.capa__contenedor .contenedor__info button{
+    border: none;
+    border-radius: 10px;
+    padding: 20px 50px;
+    background-color: black;
+    transition: .5s;
+    cursor: pointer;
+}
+.capa__contenedor .contenedor__info button:hover{
+    background-color: gray;
+}
+.capa__contenedor .contenedor__info button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.capa__contenedor .contendor__img{
+    background-image: url("../img/index/moneda.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+/*-----------------------Main__nudo-------------------------*/
+
+.index__main--nudo{
+    width: 100%;
+    height: 120vh;
+}
+.index__main--nudo h1{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.index__main--nudo p{
+    font-size: 3cqmin;
+    margin: auto;
+    margin-bottom: 150px;
+    width: 70%;
+    text-align: center;
+    font-weight: 100;
+}
+.nudo__contenedor--img{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px;
+
+}
+.nudo__card{
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.contendor--img1{
+    background-image: url("../img/index/personaje1.png");
+}
+.contendor--img2{
+    background-image: url("../img/index/personaje2.png");
+}
+.contendor--img3{
+    background-image: url("../img/index/personaje3.png");
+}
+.contendor--img4{
+    background-image: url("../img/index/personaje4.png");
+}
+.contendor--img5{
+    background-image: url("../img/index/personaje5.png");
+}
+.contendor--img6{
+    background-image: url("../img/index/personaje6.png");
+}
+
+/*-----------------------Main__footer-------------------------*/
+
+.index__footer{
+    margin-top: 300px;
+    width: 100%;
+    height: 300px;
+    background-color: black;    
+}
+
+.index__footer h2{
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+
+}
+.index__footer .footer__contenedor{
+    margin: auto;
+    margin-top: 30px;
+    height: 100px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: space-between
+
+}
+.footer__contenedor div img{
+    width: 100%;
+    height: 100%;
+}

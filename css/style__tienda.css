@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+.body__index{
+    background-color: #fff;
+    height: 100vh;
+}
+.index__header{
+    backdrop-filter: blur(20px);
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.index__header .header__buscar > a,form{
+    display: inline-block;
+}
+.header__buscar{
+    display: flex;
+    justify-content: center;
+}
+
+.buscar__img{
+    background-image: url("../img/index/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 30px;
+    width: 200px;
+    height: 50px;
+}
+#buscar{
+    font-size: 20px;
+    height: 50px;
+    width: 600px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+}
+#buscar:focus{
+    outline: none;
+}
+.header__menu{
+    justify-self: end;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    display: inline;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+.menu li:hover {
+    border-bottom: 1px solid black ;
+}
+.menu li a div{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.menu li a .img__tienda{
+    background-image: url("../img/index/tienda.png");
+    background-size: cover;
+}
+
+.menu li a .img__perfil{
+    background-image: url("../img/index/usuario.png");
+    background-size: cover;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: black;
+    border: none;
+
+}
+
+/*---------------------Menu_Desplegable-------------------------*/
+
+
+.lista__vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    background-color: white;
+}
+.menu li:hover .lista__vertical{
+    display: block;
+}
+.lista__vertical li:hover{
+    background-color: #cccccc;
+}
+.lista__vertical li a:hover{
+    color: black;
+    display: block;
+    padding: 20px;
+}
+
+
+/*--------------------Main_Tienda-------------------*/
+
+.tienda__body--capa{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tienda__main{
+    height: 80%;
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    gap: 20px;
+}
+.tienda__articulos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.card__borde{
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 10px;
+    border: none;
+}
+.card{
+    height: 70%;
+    border-bottom: 2px solid rgb(206, 206, 206);
+}
+
+.articulo1__img{
+    background-image: url("../img/tienda/bebida.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+}
+.articulo2__img{
+    background-image: url("../img/tienda/burrito.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+}
+.articulo3__img{
+    background-image: url("../img/tienda/café.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+}
+.articulo4__img{
+    background-image: url("../img/tienda/emparedado.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+}
+.product{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-total{
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product > span{
+   font-size: 20px;
+}
+.product button{
+   background-color: transparent;
+   border: none;
+}
+.product button img{
+    margin-left: 40px;
+    width: 35px;
+    height: 35px;
+}
+.tienda__cuenta{
+    border-radius: 10px;
+    background-color:#EBBF26;
+}
+.tienda__cuenta h2{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.tienda__cuenta p{
+    text-align: center;
+}
